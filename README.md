@@ -28,7 +28,7 @@ DROP TABLE IF EXISTS riders;
 
 -- 2. Creating Tables
 CREATE TABLE restaurants (
-    restaurant_id SERIAL PRIMARY KEY,
+    restaurant_id INT PRIMARY KEY,
     restaurant_name VARCHAR(100) NOT NULL,
     city VARCHAR(50),
     opening_hours VARCHAR(50)
