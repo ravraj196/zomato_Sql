@@ -103,6 +103,8 @@ FROM -- table name
 	ON c.customer_id = o.customer_id
 	WHERE 
 		o.order_date >= CURRENT_DATE - INTERVAL '1 Year'
+-- If you want to fetch orders within a specific date range, you need to use the BETWEEN operator or explicit >= and <= conditions in the WHERE clause.
+ -- o.order_date BETWEEN '2023-01-01' AND '2024-01-01'  -- Specify your date range
 		AND 
 		c.customer_name = 'Arjun Mehta'
 	GROUP BY 1, 2, 3
